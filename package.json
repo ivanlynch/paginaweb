@@ -9,7 +9,7 @@
   "author": "ivanlynch",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "angular-route": "^1.5.8",
     "express": "^4.14.0",
     "nodemon": "^1.11.0"
   }

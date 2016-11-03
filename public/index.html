@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MainController">
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap</title>
-
+    <title>GitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <a href="#" class="navbar-brand">Formulario Responsive</a>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nuevo Post</a></li>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Git Hub Repositories</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#/inicio">Inicio</a></li>
+                <li><a href="#/repos">Repositories</a></li>
             </ul>
         </div>
-    </div>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    </nav>
+    <div style="margin-top: 6em"></div>
+
+    <div ng-view></div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/posts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
 </body>
 </html>

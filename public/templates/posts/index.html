@@ -1,0 +1,21 @@
+<div class="container" ng-repeat="repo in ReposCtrl.repos">
+    <div class="col s12 m7">
+        <h2 class="header">{{repo.name}}</h2>
+        <div class="card small horizontal hoverable">
+            <div class="card-image">
+                <img src="{{repo.owner.avatar_url}}">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p class="flow-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam justo, scelerisque non felis porta,
+                        placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis sollicitudin.
+                        Pellentesque non eros ante. Vestibulum sed tristique massa.</p>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn" ng-href="https://github.com/ivanlynch/{{repo.name}}">Go to Repo!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
